@@ -1,6 +1,11 @@
 # OpenTelemetryDemo
 
-**TODO: Add description**
+start zipkin 
+
+``` docker
+docker run -d -p 9411:9411 openzipkin/zipkin
+
+```
 
 ## Installation
 
