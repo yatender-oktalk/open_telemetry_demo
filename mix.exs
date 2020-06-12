@@ -14,7 +14,7 @@ defmodule OpenTelemetryDemo.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger],
+      extra_applications: [:logger, :inets, :opentelemetry],
       mod: {OpenTelemetryDemo.Application, []}
     ]
   end
@@ -22,7 +22,7 @@ defmodule OpenTelemetryDemo.MixProject do
   # Run "mix help deps" to learn about dependencies.
   def deps do
     [
-      {:opentelemetry, "~> 0.4.0"},
+      {:opentelemetry_api, "~> 0.3.0"},
       {:opentelemetry_zipkin, "~> 0.2.0"}
     ]
   end
